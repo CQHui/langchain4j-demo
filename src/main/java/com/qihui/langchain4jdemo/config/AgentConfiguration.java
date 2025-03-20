@@ -109,7 +109,7 @@ public class AgentConfiguration {
     public ChatLanguageModel chatModel() {
         return QwenChatModel.builder()
                 .apiKey(ai_api_key)
-                .modelName("qwen-long")
+                .modelName("qwen-plus")
                 .build();
     }
 
@@ -117,7 +117,7 @@ public class AgentConfiguration {
     public StreamingChatLanguageModel streamingChatLanguageModel() {
         return QwenStreamingChatModel.builder()
                 .apiKey(ai_api_key)
-                .modelName("qwen-long")
+                .modelName("qwen-plus")
                 .build();
     }
 
